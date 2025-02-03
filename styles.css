@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('background.avif'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Full height */
+    color: white; /* Text color for readability on dark background */
+}
+
+/* Header (Navbar on Background Image) */
+header {
+    position: relative;
+    z-index: 2; /* Ensure navbar is above the background */
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    padding: 15px;
+}
+
+/* Images Section */
+.images {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    margin-top: 20px;
+    color: #333; /* Text color in content section */
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Darker color for title */
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #34495e; /* Darker color for sub-headings */
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.content ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    font-size: 1.1rem;
+    text-align: left;
+    max-width: 600px;
+}
+
+.content ul li {
+    margin: 10px 0;
+}
+
+/* Button */
+.content button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.content button:hover {
+    background-color: #45a049;
+}
